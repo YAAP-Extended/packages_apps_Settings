@@ -20,12 +20,12 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/gesture_preference_title">
 
-    <Preference
+    <!--Preference
         android:key="gesture_system_navigation_input_summary"
         android:title="@string/system_navigation_title"
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
         settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"
-        settings:keywords="@string/keywords_system_navigation" />
+        settings:keywords="@string/keywords_system_navigation" />-->
 
     <Preference
         android:key="gesture_power_menu_summary"
