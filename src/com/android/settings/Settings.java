@@ -533,4 +533,7 @@ public class Settings extends SettingsActivity {
     public static class GamingModeActivity extends SettingsActivity { /* empty */ }
 
     public static class RunningServicesDevActivity extends SettingsActivity { /* empty */ }
+    
+    /** Personalizations Activities **/
+    public static class PersonalizationsActivity extends SettingsActivity {}
 }

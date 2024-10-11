@@ -42,6 +42,9 @@ java_library {
     libs: [
         "app-compat-annotations",
     ],
+    optimize: {
+        proguard_flags_files: ["proguard-core.flags"],
+    },
 }
 
 android_library {
@@ -58,11 +61,15 @@ android_library {
         "YASP/src/**/*.java",
         "VendorSupport/src/**/*.java",
         "VendorSupport/src/**/*.kt",
+        "Personalizations/src/**/*.java",
+        "Personalizations/src/**/*.kt",
     ],
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/lib/**/*.kt",
     ],
     use_resource_processor: true,
+    
+    aaptflags: ["--extra-packages com.custom.settings"],
 
     resource_dirs: [
         "res",
@@ -70,6 +77,7 @@ android_library {
         "res-product",
         "YASP/res",
         "VendorSupport/res",
+        "Personalizations/res",
     ],
 
     static_libs: [
@@ -138,6 +146,7 @@ android_library {
         "telephony-common",
         "ims-common",
     ],
+
     flags_packages: [
         "aconfig_settings_flags",
         "aconfig_settingslib_flags",
@@ -145,6 +154,10 @@ android_library {
         "android.provider.flags-aconfig",
         "android.security.flags-aconfig",
         "keyboard_flags",
+    ],
+    
+    additional_manifests: [
+        "CustomManifest.xml"
     ],
 }
 

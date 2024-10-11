@@ -216,6 +216,9 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import ink.kscope.settings.wifi.tether.WifiTetherClientManager;
 
+import com.custom.settings.PersonalizationsFragment;
+import com.custom.settings.fragments.*;
+
 public class SettingsGateway {
 
     /**
@@ -419,6 +422,7 @@ public class SettingsGateway {
             VolumeSteps.class.getName(),
             PrivateDnsSettings.class.getName(),
             RunningServices.class.getName(),
+            PersonalizationsFragment.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -465,11 +469,13 @@ public class SettingsGateway {
             UserBackupSettingsActivity.class.getName(),
             Settings.MemtagPageActivity.class.getName(),
             Settings.NavigationModeSettingsActivity.class.getName(),
+
             // Others (YAAP Additions)
             Settings.GamingModeActivity.class.getName(),
             Settings.PreviouslyConnectedDeviceDashboardActivity.class.getName(),
             Settings.WirelessDebuggingActivity.class.getName(),
             Settings.PrivateDnsSettingsActivity.class.getName(),
             Settings.RunningServicesDevActivity.class.getName(),
+            Settings.PersonalizationsActivity.class.getName()
     };
 }
