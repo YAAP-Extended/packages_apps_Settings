@@ -424,7 +424,8 @@ public class SettingsGateway {
             VolumeSteps.class.getName(),
             PrivateDnsSettings.class.getName(),
             RunningServices.class.getName(),
-            PersonalizationsFragment.class.getName()
+            PersonalizationsFragment.class.getName(),
+            RunningServices.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -478,6 +479,7 @@ public class SettingsGateway {
             Settings.WirelessDebuggingActivity.class.getName(),
             Settings.PrivateDnsSettingsActivity.class.getName(),
             Settings.RunningServicesDevActivity.class.getName(),
-            Settings.PersonalizationsActivity.class.getName()
+            Settings.PersonalizationsActivity.class.getName(),
+            Settings.DevRunningServicesActivity.class.getName()
     };
 }
