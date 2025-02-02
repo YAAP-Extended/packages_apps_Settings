@@ -745,6 +745,8 @@
     <string name="notification_sound_vib_screen_on_title">Screen-On Notifications</string>
     <string name="notification_sound_vib_screen_on_summary">Allow sound and vibration alerts when the screen is on</string>
 
-    <string name="gms_enabled_title">Google services</string>
+    <string name="gms_services_title">Google services</string>
+    <string name="gms_services_summary">Google services and preferences</string>
     <string name="wellbeing_title">Digital wellbeing</string>
+    <string name="wellbeing_summary">Digital wellbeing and parental controls</string>
 </resources>
