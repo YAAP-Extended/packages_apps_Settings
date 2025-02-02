@@ -744,4 +744,7 @@
     <!-- Notifications while screen on -->
     <string name="notification_sound_vib_screen_on_title">Screen-On Notifications</string>
     <string name="notification_sound_vib_screen_on_summary">Allow sound and vibration alerts when the screen is on</string>
+
+    <string name="gms_enabled_title">Google services</string>
+    <string name="wellbeing_title">Digital wellbeing</string>
 </resources>
