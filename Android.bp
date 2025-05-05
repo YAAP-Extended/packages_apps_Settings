@@ -71,6 +71,11 @@ android_library {
     
     aaptflags: ["--extra-packages com.custom.settings"],
 
+    kotlincflags: [
+        "-Xjvm-default=all",
+        "-Xno-param-assertions",
+    ],
+
     resource_dirs: [
         "res",
         "res-export", // for external usage
