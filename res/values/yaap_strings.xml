@@ -761,4 +761,6 @@
     <string name="berry_black_theme_title">Pure black</string>
     <string name="berry_black_theme_summary">Pure black background for dark theme</string>
     
+    <!-- Haptic Effect Style -->
+    <string name="haptic_effect_style_title">Haptic effect style</string>
 </resources>
