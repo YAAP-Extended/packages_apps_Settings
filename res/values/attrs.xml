@@ -74,6 +74,9 @@
         <attr name="forWork" format="boolean" />
         <!-- Identifier for highlighting the menu preference on 2-pane -->
         <attr name="highlightableMenuKey" format="string" />
+        <!-- Package name that this preference requires to function. If the package is not installed,
+             this preference will be disabled and display a warning message. -->
+        <attr name="requiresPackage" format="string" />
     </declare-styleable>
 
     <declare-styleable name="PreferenceScreen">
