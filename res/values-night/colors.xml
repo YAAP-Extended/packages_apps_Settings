@@ -82,5 +82,8 @@
 
     <!-- Connected displays -->
     <color name="display_topology_background_color">@color/settingslib_color_charcoal</color>
+
+    <!-- Material color for surface container -->
+    <color name="legacy_settingslib_materialColorSurfaceContainer">@android:color/system_surface_container_dark</color>
 </resources>
 
