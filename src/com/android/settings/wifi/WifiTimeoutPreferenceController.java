@@ -34,6 +34,7 @@ public class WifiTimeoutPreferenceController extends BasePreferenceController im
     private static final String TAG = "WifiTimeoutPrefCtrl";
 
     public static final int FALLBACK_WIFI_TIMEOUT_VALUE = 0;
+    private static final String WIFI_OFF_TIMEOUT = "wifi_off_timeout";
 
     private final String mWifiTimeoutKey;
 
@@ -67,7 +68,7 @@ public class WifiTimeoutPreferenceController extends BasePreferenceController im
     public void updateState(Preference preference) {
         final ListPreference timeoutListPreference = (ListPreference) preference;
         final long currentTimeout = Settings.Global.getLong(mContext.getContentResolver(),
-                Settings.Global.WIFI_OFF_TIMEOUT, FALLBACK_WIFI_TIMEOUT_VALUE);
+                WIFI_OFF_TIMEOUT, FALLBACK_WIFI_TIMEOUT_VALUE);
         timeoutListPreference.setValue(String.valueOf(currentTimeout));
         updateTimeoutPreferenceDescription(timeoutListPreference,
                 Long.parseLong(timeoutListPreference.getValue()));
@@ -78,7 +79,7 @@ public class WifiTimeoutPreferenceController extends BasePreferenceController im
         try {
             long value = Long.parseLong((String) newValue);
             Settings.Global.putLong(mContext.getContentResolver(),
-                    Settings.Global.WIFI_OFF_TIMEOUT, value);
+                    WIFI_OFF_TIMEOUT, value);
             updateTimeoutPreferenceDescription((ListPreference) preference, value);
         } catch (NumberFormatException e) {
             Log.e(TAG, "could not persist wifi timeout setting", e);
