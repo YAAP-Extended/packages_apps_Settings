@@ -457,9 +457,9 @@
     <string name="about_dev2_title">Telegram</string>
     <string name="about_dev2_name">GuidixX</string>
     <string name="about_dev2_git" translatable="false">https://t.me/Guidix_m</string>
-    <!--string name="about_dev3_title">Member</string>
-    <string name="about_dev3_name"></string-->
-    <!--string name="about_dev3_git" translatable="false"></string-->
+    <string name="about_dev3_title">Co-lead</string>
+    <string name="about_dev3_name">SenseiDEVLinux</string>
+    <string name="about_dev3_git" translatable="false">https://github.com/SenseiDEVLinux</string>
     <string name="maintainer">Device Maintainer</string>
     <string name="maintainer_name" translatable="false"></string>
     <string name="maintainer_telegram" translatable="false"></string>
