@@ -107,7 +107,8 @@ public class GamingModeController extends AbstractPreferenceController
 
             value = Settings.System.getInt(resolver, GAMING_MODE_COLOR_KEY, -1);
             mColorMode.setValue(String.valueOf(value));
-            mColorMode.setSummary(value == -1
+            int entriesLength = mColorMode.getEntries().length;
+            mColorMode.setSummary((value == -1 || value < 0 || value >= entriesLength)
                     ? mContext.getString(R.string.gaming_mode_ringer_disabled)
                     : mColorMode.getEntries()[value]);
             mColorMode.setOnPreferenceChangeListener(this);
