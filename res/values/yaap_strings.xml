@@ -767,4 +767,5 @@
     <!-- High touch rate -->
     <string name="touch_rate_title">Increase touch polling rate</string>
     <string name="touch_rate_summary">Improves touch response by utilizing a higher polling rate</string>
+    <string name="gaming_mode_high_touch_rate_title">High Touch Rate</string>
 </resources>

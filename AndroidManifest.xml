@@ -5589,6 +5589,23 @@
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
+
+        <!-- HTSR -->
+        <service
+            android:name=".gaming.HighTouchRateTile"
+            android:label="@string/gaming_mode_high_touch_rate_title"
+            android:icon="@drawable/ic_gaming_mode"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
+            <meta-data android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+                android:value="true" />
+        </service>
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
