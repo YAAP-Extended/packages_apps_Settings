@@ -451,11 +451,11 @@
     <string name="about_title">About</string>
     <string name="about_team_category">Our Team</string>
     <string name="about_external_category">External Links</string>
-    <string name="about_dev_title">Lead Developer</string>
-    <string name="about_dev_name">GuidixX</string>
+    <string name="about_dev_title" translatable="false">Lead Developer</string>
+    <string name="about_dev_name" translatable="false">GuidixX</string>
     <string name="about_dev_git" translatable="false">https://github.com/GuidixX</string>
-    <string name="about_dev2_title">Telegram</string>
-    <string name="about_dev2_name">GuidixX</string>
+    <string name="about_dev2_title" translatable="false">Telegram</string>
+    <string name="about_dev2_name" translatable="false">GuidixX</string>
     <string name="about_dev2_git" translatable="false">https://t.me/Guidix_m</string>
     <!--string name="about_dev3_title">Member</string>
     <string name="about_dev3_name"></string-->
