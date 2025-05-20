@@ -38,12 +38,18 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
-import com.android.settings.custom.preference.CustomDialogPreference;
+import com.android.settings.preferences.CustomDialogPreference;
+import com.android.settings.preferences.SystemSettingMainSwitchPreference;
+import com.android.settings.preferences.SystemSettingDropDownPreference;
 
 import com.android.internal.custom.health.HealthInterface;
-import com.voltage.support.preferences.SystemSettingDropDownPreference;
-import com.voltage.support.preferences.SystemSettingMainSwitchPreference;
 import android.provider.Settings;
+
+import com.android.settings.core.SettingsBaseActivity;
+import com.android.settingslib.core.instrumentation.Instrumentable;
+import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
+import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.lifecycle.Lifecycle;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
@@ -121,7 +127,7 @@ public class ChargingControlSettings extends SettingsPreferenceFragment implemen
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.VOLTAGE;
+        return MetricsEvent.YASP;
     }
 
     @Override
@@ -132,8 +138,7 @@ public class ChargingControlSettings extends SettingsPreferenceFragment implemen
         }
         DialogFragment f = null;
         if (preference instanceof CustomDialogPreference) {
-            f = CustomDialogPreference.CustomPreferenceDialogFragment
-                    .newInstance(preference.getKey());
+            f = ((CustomDialogPreference) preference).getDialogFragment();
         } else {
             super.onDisplayPreferenceDialog(preference);
             return;
