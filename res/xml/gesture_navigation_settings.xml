@@ -26,13 +26,14 @@
     <PreferenceCategory
         android:title="@string/navbar_category">
 
-        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+        <SwitchPreferenceCompat
             android:key="navigation_bar_hint"
             android:title="@string/hide_navbar_gesture_bar_title"
             android:summary="@string/hide_navbar_gesture_bar_summary"
-            android:defaultValue="true" />
+            android:defaultValue="true"
+            settings:controller="com.android.settings.gestures.NavigationBarHintController" />
 
-        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+        <SwitchPreferenceCompat
             android:key="keyboard_no_navigation_bar"
             android:title="@string/keyboard_no_navigation_title"
             android:summary="@string/keyboard_no_navigation_summary"

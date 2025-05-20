@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.PixelFormat;
 import android.graphics.Point;
+import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,15 +63,25 @@ public class BackGestureIndicatorView extends LinearLayout {
         mLeftIndicator.setImageDrawable(mLeftDrawable);
         mRightIndicator.setImageDrawable(mRightDrawable);
 
+        updateSystemUiVisibility();
+    }
+
+    private void updateSystemUiVisibility() {
+        boolean hideNavBar = Settings.Secure.getInt(getContext().getContentResolver(),
+                Settings.Secure.NAVIGATION_BAR_HINT, 1) == 1;
+
         int visibility = getSystemUiVisibility()
-                | View.SYSTEM_UI_FLAG_IMMERSIVE
                 | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                 | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_FULLSCREEN;
+                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
 
-        TypedArray a = context.obtainStyledAttributes(new int[] {
+        if (hideNavBar) {
+            visibility |= View.SYSTEM_UI_FLAG_IMMERSIVE
+                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                    | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        }
+
+        TypedArray a = getContext().obtainStyledAttributes(new int[] {
                 android.R.attr.windowLightNavigationBar,
                 android.R.attr.windowLightStatusBar});
         if (a.getBoolean(0, false)) {
