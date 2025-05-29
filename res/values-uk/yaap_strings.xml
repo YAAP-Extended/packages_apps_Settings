@@ -229,22 +229,22 @@
     <!-- Media player settings -->
     <string name="media_controls_always_show_time_title">Завжди показувати час</string>
     <string name="media_controls_always_show_time_summary">Завжди показувати пройдений та загальний час на медіаплеєрі</string>
-    <string name="media_controls_time_as_next_title">Час як наступний / попередній</string>
-    <string name="media_controls_time_as_next_summary">Приховувати наступні/попередні кнопки та використовувати для цього завжди показаний час</string>
+    <string name="media_controls_time_as_next_title">Час як наступний/попередній</string>
+    <string name="media_controls_time_as_next_summary">Приховати кнопки наступний/попередній та використовувати для цього завжди показаний час</string>
     <string name="media_controls_squiggle_title">Прогрес у вигляді хвилі</string>
     <string name="media_controls_squiggle_summary">Показувати хвилястий індикатор виконання на медіаплеєрі</string>
-    <string name="media_controls_actions_title">Ліміт настроюваних дій</string>
+    <string name="media_controls_actions_title">Ліміт налаштовуваних дій</string>
     <string name="media_controls_actions_summary">Максимальна кількість кнопок, яку програми можуть додавати до програвача</string>
 	
     <!-- Ambient wake toggles -->
     <string name="doze_gesture_ambient_title">Показувати Ambient</string>
-    <string name="doze_gesture_ambient_summary">Показувати Ambient Display замість повного виведення екрана з режиму сну</string>
+    <string name="doze_gesture_ambient_summary">Показувати Ambient Display замість повного виведення екрану з режиму сну</string>
     <string name="gesture_wake_ambient">Показувати Ambient</string>
-    <string name="gesture_wake">Повне прокидання</string>
+    <string name="gesture_wake">Повне пробудження</string>
 
     <!-- wake gestures on AOD -->
     <string name="doze_gesture_allow_ambient_title">Дозволити на Ambient</string>
-    <string name="doze_gesture_allow_ambient_summary">Дозвольте цьому жесту завжди працювати і на Ambient Display</string>
+    <string name="doze_gesture_allow_ambient_summary">Дозволити цьому жесту завжди працювати і на Ambient Display</string>
 
     <!-- wake gestures haptics -->
     <string name="doze_gesture_vibrate_title">Тактильний зворотний зв\'язок</string>

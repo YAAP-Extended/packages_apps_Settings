@@ -221,6 +221,10 @@
     <string name="media_controls_always_show_time_summary">Всегда показывать пройденное и общее время на медиаплеере</string>
     <string name="media_controls_squiggle_title">Прогресс в виде волны</string>
     <string name="media_controls_squiggle_summary">Показывать волнистый, раздражающий, бесполезный, похожий на сперму и отвлекающий индикатор выполнения на медиаплеере</string>
+    <string name="media_controls_time_as_next_title">Время как следующая/предыдущая</string>
+    <string name="media_controls_time_as_next_summary">Скрыть кнопки следующая/предыдущая и использовать для этого всегда показанное время</string>
+    <string name="media_controls_actions_title">Лимит настраиваемых действий</string>
+    <string name="media_controls_actions_summary">Максимальное количество кнопок, которое приложения могут добавлять к плееру</string>
 
     <!-- Hotspot extras -->
     <string name="tethering_allow_vpn_upstreams_title">Разрешить клиентам использовать VPN</string>
@@ -459,4 +463,17 @@
     <string name="chroma_factor_summary">Высокие значения дадут более насыщенные цвета</string>
     <string name="tint_background_title">Оттенок фона</string>
     <string name="tint_background_summary">Применить настройки Яркости и Цветности так же и для фонового цвета</string>
+
+    <!-- Ambient wake toggles -->
+    <string name="doze_gesture_ambient_title">Показывать Ambient</string>
+    <string name="doze_gesture_ambient_summary">Показывать Ambient Display вместо полного вывода экрана из режима сна</string>
+    <string name="gesture_wake_ambient">Показывать Ambient</string>
+    <string name="gesture_wake">Полное пробуждение</string>
+
+    <!-- wake gestures on AOD -->
+    <string name="doze_gesture_allow_ambient_title">Разрешить в режиме AOD</string>
+    <string name="doze_gesture_allow_ambient_summary">Разрешить этому жесту всегда работать и на Ambient Display</string>
+
+    <!-- wake gestures haptics -->
+    <string name="doze_gesture_vibrate_title">Тактильная вибрация</string>
 </resources>
