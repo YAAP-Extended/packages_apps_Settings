@@ -429,9 +429,6 @@
     <string name="about_title">关于</string>
     <string name="about_team_category">团队</string>
     <string name="about_external_category">相关链接</string>
-    <string name="about_dev_title">联合发起人</string>
-    <string name="about_dev2_title">联合发起人</string>
-    <string name="about_dev3_title">成员</string>
     <string name="maintainer">设备维护者</string>
     <string name="kernel">内核开发者</string>
     <string name="about_tg_title">Telegram 群组</string>

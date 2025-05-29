@@ -290,12 +290,6 @@
     <string name="about_title">О нас</string>
     <string name="about_team_category">Участники</string>
     <string name="about_external_category">Дополнительно</string>
-    <string name="about_dev_title">Co-Lead</string>
-    <string name="about_dev_name">Adhitya Mohan</string>
-    <string name="about_dev2_title">Co-Lead</string>
-    <string name="about_dev2_name">Ido Ben-Hur</string>
-    <string name="about_dev3_title">Member</string>
-    <string name="about_dev3_name">Omkar Chandorkar</string>
     <string name="maintainer">Сопровождающий устройства</string>
     <string name="kernel">Разработчик ядра</string>
     <string name="about_tg_title">Telegram</string>

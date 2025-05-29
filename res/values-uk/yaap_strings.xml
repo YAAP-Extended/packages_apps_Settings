@@ -420,12 +420,6 @@
     <string name="about_title">Про нас</string>
     <string name="about_team_category">Учасники</string>
     <string name="about_external_category">Додатково</string>
-    <string name="about_dev_title">Co-Lead</string>
-    <string name="about_dev_name">Adhitya Mohan</string>
-    <string name="about_dev2_title">Co-Lead</string>
-    <string name="about_dev2_name">Ido Ben-Hur</string>
-    <string name="about_dev3_title">Member</string>
-    <string name="about_dev3_name">Omkar Chandorkar</string>
     <string name="maintainer">Device Maintainer</string>
     <string name="kernel">Розробник ядра</string>
     <string name="about_tg_title">Telegram</string>

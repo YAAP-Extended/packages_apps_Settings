@@ -64,9 +64,6 @@
     <string name="about_title">關於</string>
     <string name="about_team_category">開發團隊</string>
     <string name="about_external_category">外部連結</string>
-    <string name="about_dev_title">領銜開發者</string>
-    <string name="about_dev2_title">領銜開發者</string>
-    <string name="about_dev3_title">成員</string>
     <string name="maintainer">裝置維護者</string>
     <string name="kernel">核心開發者</string>
     <string name="about_tg_title">Telegram 群組</string>
