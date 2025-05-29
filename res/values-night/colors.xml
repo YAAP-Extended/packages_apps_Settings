@@ -18,8 +18,8 @@
     xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
     <color name="homepage_accessibility_background">#783BE5</color>
     <color name="homepage_support_background">#3F5FBD</color>
-    <color name="contextual_card_background">@android:color/black</color>
-    <color name="search_bar_background">@android:color/black</color>
+    <color name="contextual_card_background">@*android:color/material_grey_900</color>
+    <color name="search_bar_background">?androidprv:attr/materialColorSurfaceBright</color>
     <color name="notification_importance_button_unselected">#5F6368</color>
 
     <!-- Palette list preference colors. -->
@@ -35,7 +35,7 @@
     <color name="gestures_setting_background_color">@android:color/black</color>
 
     <!-- Dialog error color. -->
-    <color name="settings_dialog_colorError">#f28b82</color>
+    <color name="settings_dialog_colorError">#f28b82</color> <!-- Red 300 -->
 
     <!-- Face and fingerprint enrollment -->
     <color name="biometric_enroll_intro_color_bar">#5bb974</color>
@@ -44,13 +44,13 @@
     <color name="fingerprint_enrollment_finish_color_outline">#669df6</color>
 
     <!-- Side fingerprint sensor enrollment animation colors -->
-    <color name="sfps_enrollment_fp_captured_color">#d2e3fc</color>
-    <color name="sfps_enrollment_fp_error_color">#fad2cf</color>
-    <color name="sfps_enrollment_progress_bar_bg_color">@android:color/black</color>
-    <color name="sfps_enrollment_progress_bar_fill_color">#669df6</color>
-    <color name="sfps_enrollment_progress_bar_error_color">#ee675c</color>
+    <color name="sfps_enrollment_fp_captured_color">#d2e3fc</color> <!-- Blue 100 -->
+    <color name="sfps_enrollment_fp_error_color">#fad2cf</color> <!-- Red 100 -->
+    <color name="sfps_enrollment_progress_bar_bg_color">#3C4043</color> <!-- Gray 800 -->
+    <color name="sfps_enrollment_progress_bar_fill_color">#669df6</color> <!-- Blue 400 -->
+    <color name="sfps_enrollment_progress_bar_error_color">#ee675c</color> <!-- Red 400 -->
 
-    <!-- Material inverse ripple color -->
+    <!-- Material inverse ripple color, useful for inverted backgrounds. -->
     <color name="ripple_material_inverse">@*android:color/ripple_material_light</color>
 
     <!-- Icon tint color for battery usage system icon -->
@@ -62,6 +62,7 @@
     <!-- UDFPS colors -->
     <color name="udfps_enroll_icon">#7DA7F1</color>
     <color name="udfps_moving_target_fill">#475670</color>
+    <!-- 50% of udfps_moving_target_fill-->
     <color name="udfps_moving_target_fill_error">#80475670</color>
     <color name="udfps_enroll_progress">#7DA7F1</color>
     <color name="udfps_enroll_progress_help">#607DA7F1</color>
@@ -69,8 +70,8 @@
 
     <!-- Accessibility colors -->
     <color name="accessibility_text_reading_background">@android:color/black</color>
-
     <!-- Flash notifications colors -->
+    <!-- Screen flash notification color selected stroke in color selection dialog -->
     <color name="screen_flash_color_button_outer_circle_stroke_color">#FFFFFF</color>
 
     <!-- Switch bar disabled state color-->
@@ -80,9 +81,9 @@
     <color name="pointer_fill_outline_color">#FFFFFF</color>
 
     <!-- Connected displays -->
-    <color name="display_topology_background_color">@android:color/black</color>
+    <color name="display_topology_background_color">@color/settingslib_color_charcoal</color>
 
     <!-- Material color for surface container -->
-    <color name="legacy_settingslib_materialColorSurfaceContainer">@android:color/black</color>
+    <color name="legacy_settingslib_materialColorSurfaceContainer">@android:color/system_surface_container_dark</color>
 </resources>
 
