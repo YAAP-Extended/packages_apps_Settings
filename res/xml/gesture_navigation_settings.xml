@@ -26,21 +26,20 @@
     <PreferenceCategory
         android:title="@string/navbar_category">
 
-        <SwitchPreferenceCompat
-            android:key="navigation_bar_hint"
-            android:title="@string/hide_navbar_gesture_bar_title"
-            android:summary="@string/hide_navbar_gesture_bar_summary"
-            android:defaultValue="true"
-            settings:controller="com.android.settings.gestures.NavigationBarHintController" />
+    <SwitchPreferenceCompat
+        android:key="keyboard_no_navigation_bar"
+        android:title="@string/keyboard_no_navigation_title"
+        android:summary="@string/keyboard_no_navigation_summary"
+        android:defaultValue="true"
+        settings:controller="com.android.settings.navigationbar.KeyboardNoNavigationBarController" />
 
-        <SwitchPreferenceCompat
-            android:key="keyboard_no_navigation_bar"
-            android:title="@string/keyboard_no_navigation_title"
-            android:summary="@string/keyboard_no_navigation_summary"
-            android:defaultValue="true"
-            android:dependency="navigation_bar_hint" />
+    <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        android:key="navigation_bar_hint"
+        android:title="@string/show_navbar_hint_title"
+        android:summary="@string/show_navbar_hint_summary"
+        android:defaultValue="true" />
+
     </PreferenceCategory>
-
     <PreferenceCategory
         android:key="assistant_gesture_category"
         android:persistent="false"

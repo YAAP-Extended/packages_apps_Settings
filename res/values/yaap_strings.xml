@@ -754,8 +754,8 @@
     <string name="navbar_category">Navigation bar</string>
     <string name="hide_navbar_gesture_bar_title">Hide gesture bar</string>
     <string name="hide_navbar_gesture_bar_summary">Hide the gesture bar at the bottom of the screen</string>
-    <string name="keyboard_no_navigation_title">Hide IME space</string>
-    <string name="keyboard_no_navigation_summary">Hide space below keyboard when navigation hint is disabled</string>
+    <string name="keyboard_no_navigation_title">Enable IME space</string>
+    <string name="keyboard_no_navigation_summary">Enable space below keyboard when navigation hint is disabled</string>
 
     <!-- Black theme for dark mode -->
     <string name="berry_black_theme_title">Pure black</string>
@@ -785,5 +785,9 @@
     <string name="charging_control_target_time_title">Target time to full charge</string>
     <string name="charging_control_target_time_summary">Battery will be fully charged by %s</string>
     <string name="charging_control_limit_title">Limit</string>
+
+    <!-- Navigation bar hint -->
+    <string name="show_navbar_hint_title">Navigation hint</string>
+    <string name="show_navbar_hint_summary">Show navigation hint bar at the bottom of the screen</string>
 
 </resources>
